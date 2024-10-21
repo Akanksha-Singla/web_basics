@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prop</title>
+</head>
+<body>
+    <input type="password" id="pass" name="pss" value="akanksha" required placeholder="password">
+<input type="checkbox" id="showpass"><label id="passLabel">show</label>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+    console.log($("#pass").val());
+    console.log($("#pass").prop("placeholder"));
+    console.log($("#pass").attr("placeholder"));
+    $("#pass").attr("placeholder","enter password")
+    $("#pass").prop("placeholder","add password")
+    console.log($("#pass").prop("placeholder"));
+
+    $("#showpass").click(()=>{
+        console.log("show")
+        if($("#showpass").prop("checked")){
+           console.log("check")
+            $("#pass").attr("type","text");
+        }
+        else{
+            $("#passLabel").text("Hide")
+            $("#pass").attr("type","password");
+        }
+    })
+</script>
+</html>

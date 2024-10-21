@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        img {
+            height: "600px";
+            width: "600px";
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+
+      $(document).ready(function () {
+        $("#hidebtn").click(() => {
+            
+
+            // $("#img1").hide(500,()=>$("#img2").hide(500,()=>$("#img3").hide(500)))
+         
+            if ($("#hidebtn").text() === "slideup") {
+            $("img").slideUp(1000, () => $("#hidebtn").text("slidedown"));
+          } else {
+            $("img").slideDown(1000, () => $("#hidebtn").text("slideup"));
+          }
+        //   effect(milli seconds hs been given to show transition)
+        });
+        $("#togglebtn").click(
+            function(){
+                $("img").slideToggle(1000)
+            }
+        )
+
+
+      });
+      $(document).ready(function(){
+        const styleObject ={
+            display : "flex",
+            gap:"5px"
+        }
+        $("#container").css(styleObject)
+
+      })
+
+      
+    </script>
+  </head>
+  <body>
+    <div id="container">
+        <img src="./download.jpeg"  id="img1"/>
+        <!-- <img src="./download.jpeg"  id="img2"/>
+        <img src="./download.jpeg"  id="img3" /> -->
+    </div>
+   
+    <button id="hidebtn">slideup</button>
+    <button id="togglebtn">toggle</button>
+    <br />
+    <b> above image will be removed from dom</b>
+  </body>
+</html>

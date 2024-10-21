@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .block {
+        border: 1px solid black;
+        width: 200px;
+        height: 200px;
+      }
+      #flexContainer {
+        border: 1px solid black;
+        height: 800px;
+        width: 800px;
+        display: flex;
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+        flex-direction: row;
+        justify-content: space-evenly;
+        justify-content: flex-start;
+        justify-content: flex-end;
+        justify-content: space-around;
+       justify-content: space-between;
+       align-items: center;
+      }
+      .container {
+        border: 1px solid green;
+      }
+      .contatiner>*{
+        border: 1px solid black;
+        /* width:  200px; */
+        flex-basis: 300px;/*replacement of width */
+        height: 200px;
+        /* flex-grow: 1; */
+      }
+      #flexContainer2{
+        border: 1px solid black;
+        height: 800px;
+        width: 800px;
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-flow: row wrap;
+        /* flex-wrap: wrap-reverse; */
+        justify-content: space-evenly;
+        align-items: center;/* n rows: npartition*/
+        /* align-content: center; *//* n rows: commoncenter of flexbox*/
+        /* flex-grow: 1; */
+      }
+      /* .contatiner>*:nth-child(3){
+       
+      }
+      .contatiner>*:first-child{
+        order:3
+      }
+      .contatiner>*:nth-child(2){
+        order:4;
+      } */
+    </style>
+  </head>
+  <body>
+    <article id="flexContainer" class="contatiner">
+      <div>
+        <span>1</span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+        dolores similique, assumenda natus necessitatibus sapiente ipsa omnis
+        ipsam facere!
+      </div>
+      <section>
+        <span>2</span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
+        consequatur quidem perferendis dolor vitae.
+      </section>
+      <div>
+        <span>3</span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odit libero,
+        error magni asperiores esse!
+      </div>
+      <div>
+        <span>4</span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odit libero,
+        error magni asperiores esse!
+      </div>
+      <div>
+        <span>5</span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odit libero,
+        error magni asperiores esse!
+      </div>
+      <div>
+        <span>6</span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odit libero,
+        error magni asperiores esse!
+      </div>
+    </article>
+    <article id="flexContainer2" class="contatiner">
+        <div>
+          <span>1</span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          dolores similique, assumenda natus necessitatibus sapiente ipsa omnis
+          ipsam facere!
+        </div>
+        <section>
+          <span>2</span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
+          consequatur quidem perferendis dolor vitae.
+        </section>
+        <div>
+          <span>3</span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odit libero,
+          error magni asperiores esse!
+        </div>
+        <div>
+          <span>4</span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odit libero,
+          error magni asperiores esse!
+        </div>
+        <div>
+          <span>5</span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odit libero,
+          error magni asperiores esse!
+        </div>
+        <div>
+          <span>6</span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odit libero,
+          error magni asperiores esse!
+        </div>
+        <div>
+            <span>7</span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odit libero,
+            error magni asperiores esse!
+          </div>
+          <div>
+            <span>8</span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odit libero,
+            error magni asperiores esse!
+          </div>
+      </article>
+  </body>
+</html>

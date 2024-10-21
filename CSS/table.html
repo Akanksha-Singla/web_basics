@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th{
+            border: 2px solid rgb(0, 30, 128);
+            border-collapse: collapse;
+        }
+        tr:first-child{
+            /* jo tr first child h */
+             background-color: gold;   
+            }
+        tbody tr:nth-last-child(2){
+            background-color: pink;
+        }
+        tbody tr:nth-last-child(2) td:nth-child(2){
+            background-color: rgb(192, 255, 211);
+        }
+    </style>
+</head>
+<body>
+    <h5>Table</h5>
+    <table>
+        <caption><bold>StudenT details</bold></caption>
+        <thead>
+            <tr>
+            <th rowspan="2">Id</th>
+            <th>Student Name</th>
+            <th rowspan="2">Branch</th>
+            <th rowspan="2">Year</th>
+            </tr>
+           
+        </thead>
+     <tbody>
+           <tr>
+            <td>1</td>
+            <td>Akanksha</td>
+            <td>cse</td>
+            <td>Final</td>
+           </tr>
+           <tr>
+            <td>1</td>
+            <td>Shital</td>
+            <td>cse</td>
+            <td>Final</td>
+           </tr>
+           <tr>
+            <td>1</td>
+            <td>Yaminiee</td>
+            <td>cse</td>
+            <td rowspan="2">SE</td>
+           </tr>
+           <tr>
+            <td>1</td>
+            <td>Rahul</td>
+            <td>cse</td>
+            <td></td>
+           </tr>
+    </tbody>
+    <tfoot><tr><td colspan="4">This is footer</td></tr></tfoot>
+    </table>
+    
+</body>
+</html>

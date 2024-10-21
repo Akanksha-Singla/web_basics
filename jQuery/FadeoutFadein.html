@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+      img {
+        width: " 700px";
+        height: "600px";
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("#fadeInbtn").click(() => {
+          // $("#img1").fadeIn(500,()=>$("#img2").fadeIn(500,()=>$("#img3").fadeIn(500)))
+
+          if ($("#fadeInbtn").text() === "fadeIn") {
+            $("img").fadeIn(1000, () => $("#fadeInbtn").text("fadeOut"));
+          } else {
+            $("img").fadeOut(1000, () => $("#fadeInbtn").text("fadeIn"));
+          }
+          //effect(milli seconds hs been given to fadeOut transition)
+        });
+        $("#togglebtn").click(function () {
+          $("img").fadeToggle(1000);
+        });
+      });
+      $(document).ready(function () {
+        const styleObject = {
+          display: "flex",
+          gap: "5px",
+        };
+        $("#container").css(styleObject);
+      });
+      $(document).ready(function () {
+        $("#fadeTobtn").click(() => $("img").fadeTo(500, 0.3)); // two compulsary duration and opacity
+      });
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <img src="./download.jpeg" id="img1" />
+      <img src="./download.jpeg" id="img2" />
+      <img src="./download.jpeg" id="img3" />
+    </div>
+
+    <button id="fadeInbtn">fadeIn</button>
+    <button id="fadeTobtn">fadeTo</button>
+    <button id="togglebtn">toggle</button>
+    <br />
+    <b> above image will be removed from dom</b>
+  </body>
+</html>

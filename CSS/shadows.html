@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            background-color: aquamarine;
+            margin:30px;
+            padding:5px;
+            border-radius: 20px;
+              
+        }  
+#block1{
+    /* sequence matters right bottom spreading  color*/
+    box-shadow: 10px 2px 40px green;
+
+}
+#block2{
+    /* sequence matters right bottom spreading  color*/
+    box-shadow: -10px 2px 40px;
+
+}
+#block1 h1:first-child{
+    text-shadow: 10px 10px 4px;
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <b id="inline">INline</b>
+        <div class="block" id="block1">
+        <h1>How to install Vs Code</h1>
+        <h1>How to install Vs Code</h1>
+        <h1>How to install Vs Code</h1>
+        <h1>How to install Vs Code</h1>
+        <h1>How to install Vs Code</h1>
+        <h1>How to install Vs Code</h1>
+        <h1>How to install Vs Code</h1>
+    </div>
+    <div class="block" id="block2">
+        <h1>How to install Vs Code</h1>
+        <h1>How to install Vs Code</h1>
+        <h1>How to install Vs Code</h1>
+        <h1>How to install Vs Code</h1>
+        <h1>How to install Vs Code</h1>
+        <h1>How to install Vs Code</h1>
+        <h1>How to install Vs Code</h1>
+    </div>
+    </section>
+    
+</body>
+</html>

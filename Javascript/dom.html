@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ol id="parentLi">
+      <li class="listItem">react</li>
+      <li class="listItem">Angular</li>
+
+      <li class="frontend">java</li>
+      <li class="frontend">python</li>
+      <li id="c#"><b>c sharp</b></li>
+    </ol>
+    <p id="para"></p>
+    <script>
+      const listNode = document.getElementsByTagName("li");
+      console.log(listNode);
+      const classNode = document.getElementsByClassName("frontend");
+      console.log(classNode);
+      const idNode = document.getElementById("c#");
+      console.log(idNode);
+      console.log(idNode.textContent); //standard dom property (better performance)//plain text
+      console.log(idNode.innerText); //plain text
+      console.log(idNode.innerHTML); //along with child i.e given style is applied on text
+      const para = document.getElementById("para");
+      para.innerHTML = idNode.innerHTML;//with style
+    //   para.innerHTML = idNode.innerText;//without style
+
+      para.innerHTML= "<i>"+ idNode.innerText + "</i>"
+const text = document.createTextNode("india is my country")
+
+      const h1 = document.createElement("h1");
+      h1.append(text);
+     para.appendChild(h1);
+     //remove
+h1.remove();
+//remove child
+const parentLi = document.getElementById("parentLi");
+
+if (parentLi.hasChildNodes()) {
+  parentLi.removeChild(parentLi.children[0]);
+}
+
+
+    </script>
+  </body>
+</html>

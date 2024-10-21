@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #img1{  
+         border:8px solid brown
+        }
+     
+    
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   
+    <script src="https://code.jquery.com/color/jquery.color-3.0.0.min.js"></script>
+    <script>
+      const imgStyle = {
+        borderRadius: "50%",
+        width: "300px",
+        height: "300px",
+        opacity: "1",
+        borderColor:"yellow"
+      };
+      const imgStyle2 = {
+        borderRadius: "0px",
+        width: "200px",
+        height: "200px",
+        opacity: "0.5",
+         borderColor:"red"
+      };
+      $(document).ready(function () {
+        $("img").hover(function () {
+          $("img").animate(imgStyle), 800;
+        });
+        $("img").mouseout(function () {
+          $("img").animate(imgStyle2), 800;
+        });
+      });
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <img src="./download.jpeg" id="img1"  />
+  </body>
+</html>

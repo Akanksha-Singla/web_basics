@@ -1,0 +1,72 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.red{
+    width:30px;
+    height: 30px;
+    margin:2px;
+    background-color:red;
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;
+}
+
+.blue{
+    width:30px;
+    height: 30px;
+    margin:2px;
+    background-color: blue;
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;
+}
+
+.yellow{
+    width:30px;
+    height: 30px;
+    margin:2px;
+    background-color:yellow;
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mymove {
+    100% {transform: rotate(360deg);}
+  }
+
+  .heart{
+    width:100px;
+    height:90px;
+    margin-top: 10px;
+    position: relative;
+  
+  }
+  .heart::before{
+    content:"";
+    position: absolute;
+    background-color: red;
+    border-radius: 50px 50px 0 0;
+    width:52px;
+    height:80px;
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+
+  .heart::after{
+    content:"";
+    position: absolute;
+    background-color: red;
+    border-radius: 50px 50px 0 0;
+    width:52px;
+    height:80px;
+    left:0px;
+    transform: rotate(45deg);
+     transform-origin: 100% 100%;
+   
+  }
+
+

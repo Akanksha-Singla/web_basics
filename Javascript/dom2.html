@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .imageStyle{
+            width: 300px;
+            height: 300px;
+
+        }
+        .border{
+            border-radius: 50%;
+
+        }
+
+    </style>
+  </head>
+  <body>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <img id="tulipImage" src="./tulip.jpeg" alt="tulipImage" />
+    <button onclick="change()" id="changeButton">Change Image</button>
+  </body>
+  <script>
+    //what is path of image,alt text,height,width
+
+    const image = document.getElementById("tulipImage");
+    console.log(image.src);
+
+    const change = function () {
+      image.src = "./download.jpeg";
+      image.alt = "download";
+      image.style.width = "200px";
+    };
+    const changeButton = document.getElementById("changeButton");
+    changeButton.style.background = "pink";
+    changeButton.style.cssText="border-radius:10px; background:blue";
+    changeButton.style.padding="3px 3px"
+    const p = document.getElementsByTagName("p");
+    console.log(p)
+    p.forEach(element => {
+        console.log(element)
+    });
+image.setAttribute("class","imageStyle")//it assign a attribute to a element
+  image.classList.add("border")
+  </script>
+</html>

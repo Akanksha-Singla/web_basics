@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <details>
+        <summary>Web Basics</summary>
+        
+    <p>These are basics of web basics</p>
+  
+<details>
+    <summary>Js</summary>
+    <p>Javascript</p>
+</details>
+</details>
+<input list="dcode" id="code"/>
+    <datalist id="dcode">
+        <option value="Ld">LD</option>
+        <option value="Js">js</option>
+        <option>React</option>  
+        <!-- will take value as label -->
+    </datalist>
+    <input type="number" list="numlist" id="count" placeholder="select number of items">
+    <datalist id="numlist">
+         <option>1</option>
+         <option>2</option>
+         <option>3</option>
+         <option>4</option>
+    </datalist>
+    <input type="time" list="timelist" id="time" placeholder="select time">
+    <datalist id="timelist">
+         <option value="12:30"></option>
+         <option value="10:30"></option>
+         <option value="10:00"></option>
+         <option value="11:30"></option>
+    </datalist>
+    <br>
+    <audio controls loop src="./Media/neonarrow.mp4"></audio>
+    <!-- <audio controls >
+        <source src="1.ogg"/>
+        <source src="file_example_MP3_2MG.mp3"/>
+        <source src="1.mp3"/>
+
+    </audio> -->
+    <video height="300" width="300" src="Media/neonarrow.mp4" controls loop></video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vz1RlUyrc3w?si=SZISLC6ZR6s5KHTb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="Media/sample-pdf-files-sample1.pdf"></iframe>
+<!-- <iframe src="Media/neonarrow.mp4"></iframe> -->
+<!-- <iframe src="Media/file_example_MP3_2MG.mp3" ></iframe> -->
+<iframe src="./ImageDemo.html"></iframe>
+<label for="myName">Enter Name</label>
+<input type="text" id="myName"/>
+<button type="button" onclick = "result.value = myName.value.toUpperCase()">COnvert</button>
+<p>
+    Uppercase:<span>
+        <output id="result"></output>
+    </span>
+</p>
+<label for="myLastName">Enter Last Name</label>
+<input type="text" id="myLastName"/>
+<button type="button" onclick = "result2.textContent = myLastName.value.toUpperCase()">COnvert</button>
+<p>
+    Uppercase Last:<span id="result2">
+        
+    </span>
+</p>
+
+<script>
+//     function convert(){
+//         const upString = document.getElementById("myName").value.toUpperCase();
+// document.getElementById("result").textContent = upString;
+
+//     }
+</script>
+</body>
+</html>

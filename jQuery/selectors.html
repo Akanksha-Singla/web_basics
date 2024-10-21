@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .decoration{
+            border:1px solid black
+        }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li class="listItem" id="li1">react</li>
+      <li class="listItem">Angular</li>
+
+      <li class="frontend">java</li>
+      <li class="frontend">python</li>
+      <li id="cs"><b>c sharp</b></li>
+    </ol>
+    <h1  class="frontend">Front end <small>tech</small></h1>
+   <div id="divh3"></div>
+divh3
+   </div>
+
+    <p class="frontend">font</p>
+    <p id="para">para</p>
+    <input id="fname">
+    <p title="Tomorrow">This is a paragraph.</p>
+<p title="tomorrow">This is a paragraph.</p>
+<p title="Tom">This is a paragraph.</p>
+</body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+    
+
+
+      const classNode = document.getElementsByClassName("frontend");
+      console.log($(".frontend"));
+      console.log($(".frontend").text());
+      console.log($("li.frontend"))
+
+console.log($("#cs").text());
+console.log($("#para").text())
+console.log($("h1.frontend").html())
+
+
+const h1Heading = $("h1.frontend").html();
+$("#divh3").html(h1Heading);
+
+const oldCOntent =$("#li1").text();
+console.log(oldCOntent);
+const newContent =$("#li1").html("jquery")
+
+$("#li1").css("color","red") //css key value pair
+const styleObject ={ //camelcase like react
+    color:"green",
+    backgroundColor:"pink",
+    textDecoration:"underLIne"
+}
+
+$(".listItem").css(styleObject);
+//add class
+$("h1.frontend").addClass("decoration"); 
+//classList.add
+// $("#fname").keyup(()=>console.log($("#fname").val()))
+   // or as this keyword does not work in arrow so use annonymous function
+   $("#fname").keyup(function(){
+    console.log($(this).val())
+   })
+   //attribute selector
+   $("p[title|='Tomorrow']").css("background-color", "yellow");
+   </script>
+  </body>
+</html>

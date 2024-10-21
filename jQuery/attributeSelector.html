@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Selectors</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Attribute Selector
+            $('input[type="text"]').addClass('highlight');
+
+            // Combinator Selector (descendant combinator)
+            $('div > p').addClass('highlight');
+
+            // Pseudo-class Selector
+            $('li:first-child').addClass('highlight');
+        });
+    </script>
+</head>
+<body>
+    <h2>jQuery Selectors Example</h2>
+
+    <div>
+        <p>This paragraph is a direct child of div.</p>
+        <span>This span is also a direct child of div.</span>
+        <p>This paragraph is another direct child of div.</p>
+    </div>
+
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+
+    <form>
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="password" name="password" placeholder="Enter your password">
+        <input type="text" name="email" placeholder="Enter your email">
+    </form>
+</body>
+</html>

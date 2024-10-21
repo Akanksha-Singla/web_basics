@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+           background-color: gray;
+            padding: 5px;
+            border: 3px double;
+        }
+        nav a{
+            text-decoration: none;
+            margin: 5px;
+            padding:5px
+        }
+        nav ol li{
+            display: inline-block;
+        }
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: yellow;
+        }
+        a:active{
+            background-color: rgb(157, 23, 94);
+        }
+        h2::first-letter{
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(157, 23, 94);
+            font-size: 40px;
+        }  
+        p::first-line{
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: blueviolet;
+        }
+        #backimage{
+            opacity: 1;
+            postion :absolute;
+            z-index:1
+        }
+        h2{
+            position:absolute;
+            top:0px;
+            z-index:2;
+         
+            
+        }
+    </style>
+</head>
+<body>
+   <img id="backimage" src="../Media/download.jpeg"/>
+
+    <h2>This is example of pseudo element</h2>
+    <p>
+        a CSS pseudo-element is a
+         keyword added to a 
+         selector that lets you style a specific 
+         part of the selected element(s).
+         a CSS pseudo-element is a
+         keyword added to a 
+         selector that lets you style a specific 
+         part of the selected element(s).
+    </p>
+</body>
+</html>

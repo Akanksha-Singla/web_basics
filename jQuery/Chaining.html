@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chainBlock{
+            border:2px groove pink;
+            width: 70%;
+            height: 200px;
+            background: linear-gradient(linen,pink);
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   <script>
+    $(document).ready(
+        function(){
+            // $(".chainBlock").hide(4000,function(){
+            //     $(this).show(2000,function(){
+            //         $(this).slideUp(1000);
+            //     })
+            // })
+    //Chaining is possible only if selector is same
+setInterval(()=>{
+$(".chainBlock").hide(2000).show(2000).slideUp(2000).slideDown(2000)
+},4000)
+            
+        }
+    )
+   </script>
+</head>
+<body>
+    <h1> Chaining is possible only if selector is same</h1>
+    <div class="chainBlock"></div>
+</body>
+</html>

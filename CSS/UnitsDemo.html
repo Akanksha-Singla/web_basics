@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+       #bid{
+        font-size: 0.5rem;/*half of font of root element*/
+    /* 0.5 * font size of root element*/   
+    }
+       p{
+        font-size: 30px;
+       }
+       .iid{
+        font-size: 3em;/* 3 times of relative to its parent or 3 of current*/
+       }
+    </style>
+</head>
+<body>
+    <article>
+        <!-- more than viewport size unit use em-->
+        <h1>India is my country</h1> 
+        <!-- equal to viewport  -->
+        <p>Lorem ipsum dolor sit amet consectetur.
+            <b id="bid">All indians are my <i class="iid">i am 3i</i>brother and sister</b></p>
+    </article>
+</body>
+</html>

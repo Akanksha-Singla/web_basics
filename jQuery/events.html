@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div > p {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>a</p>
+      <p>a</p>
+      <section><p>a</p></section>
+      <p>a</p>
+    </div>
+    <div>
+      <label for="course">Select Courses for Training:</label>
+      <input
+        name="course"
+        type="checkbox"
+        onchange="collectData()"
+        id="cs1"
+        value="web basics"
+      />
+      <label for="cs1">Web Basics</label>
+      <input
+        name="course"
+        type="checkbox"
+        onchange="collectData()"
+        id="cs2"
+        value="java"
+      />
+      <label for="cs2">Java</label>
+      <input
+        name="course"
+        type="checkbox"
+        onchange="collectData()"
+        id="cs3"
+        value="sql"
+      />
+      <label for="cs3">SQL</label>
+      <input
+        name="course"
+        type="checkbox"
+        onchange="collectData()"
+        id="cs4"
+        value="git"
+      />
+      <label for="cs4">GIT</label>
+      <input
+        name="course"
+        type="checkbox"
+        onchange="collectData()"
+        id="cs5"
+        value="c++"
+      />
+      <label for="cs5">C++</label>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+      const checkboxes = $("[name='course']");
+      console.log(checkboxes);
+    //   checkboxes.change(() => collectData());
+    //   function collectData() {
+    //     let courses = [];
+    //     $.each(checkboxes, function (key, checkbox) {
+    //       if (checkbox.checked) {
+    //         courses.push(checkbox.value);
+    //        }
+    //     });
+    //     console.log("course", courses);
+    //   }
+      //funtion by selecting particular id
+function collectData(){
+    let courses = [];
+    $("[name='course']").each(function(i,ele){
+        if($(this).prop("checked")){
+            courses.push($(this).val())
+        }
+
+    })
+//    if($("#cs1").prop("checked")){
+// courses.push($("#cs1").val())
+//     }
+//     if($("#cs2").prop("checked")){
+// courses.push($("#cs2").val())
+//     }
+//     if($("#cs3").prop("checked")){
+// courses.push($("#cs3").val())
+//     }
+
+//     if($("#cs4").prop("checked")){
+// courses.push($("#cs4").val())
+//     }
+//     if($("#cs5").prop("checked")){
+// courses.push($("#cs5").val())
+//     }
+//     if($("#cs6").prop("checked")){
+// courses.push($("#cs6").val())
+//     }
+    console.log("courses",courses)
+}
+
+
+
+    </script>
+  </body>
+</html>

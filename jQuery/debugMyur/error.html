@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        background-color: grey;
+        height: 100px;
+        width: 500px;
+
+        margin-left: 200px;
+        margin-top: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="p">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+      voluptates, nesciunt quia nemo consequuntur debitis nobis quaerat vero
+      repellendus. Asperiores error vero qui alias saepe doloribus quia veniam
+      adipisci dolore!
+    </p>
+
+    <ul id="ul">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <form action="success.html" onsubmit="return submit()" novalidate>
+      Enter Email:<input type="email" name="email" id="email" />
+
+      <div class="errorblock">
+        <b id="error1"></b>
+      </div>
+
+      <button type="submit">click</button>
+    </form>
+
+    <script src="./error.js"></script>
+  </body>
+</html>

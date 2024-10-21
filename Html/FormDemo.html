@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+    .formClass{
+        display: flex;
+        flex-direction:column;
+        margin: 10px;
+    }
+    </style>
+</head>
+<body>
+    <form class="formClass" action="ImageDemo.html">
+        <label for="firstname">Enter Name</label>
+        <input name ="myname"id="firstName" placeholder="firstname" required pattern="[A-Z a-z ]{2-,10}*"/>
+        <label for="firstname">Enter Last Name</label>
+        <input name ="myname" id="lastName" placeholder="lastName" pattern="[A-Z]"/>
+        <label for="age">Enter age</label>
+        <input type="number" placeholder="age" id="age" required min="0" max="45"/>
+        <label for="email">Email</label>
+        <input type="email" id="email" required/>
+        <label for="password">Password</label>
+       <input type="password" id="password" required minlength="3" maxlength="8"/>
+     <div><label for="courses">Select courses</label>
+        <input type="checkbox" id="course1" value="web Basics" name="course"/><label>Web Basics</label>
+        <input type="checkbox"  id="course2" value="git" name="course"/><label>GIT</label>
+        <input type="checkbox" id="course3" value="git" name="course"/><label>GIT</label>
+        <input type="checkbox" id="course4" value="sql"name="course"/><label>Sql</label>
+        <input type="checkbox" id="course5" value="React" name="course"/><label>React</label></div>
+       
+       
+        <div>
+            <label>Select Gender</label>
+            <input type="radio" name="gender" value="male"/><label>Male</label>
+            <input type="radio" name="gender" value="female"/><label>Female</label>
+        </div>
+      <div>
+        <label> Department</label>
+        <select name="department">
+            <option value="web">WEB</option>
+            <option value="cpp">C++</option>
+            <option value="Mad">MObile Deleopment</option>
+            <option  value="Android">Android</option>
+        </select>
+      </div>
+     
+      <input type="color"/>
+      <input type="date"/>
+      <input type="range"/>
+      <input type="datetime-local"/>
+      <input type="tel"/>
+      <input type="week"/>
+      <input type="url"/>
+      <input type="submit"/>
+      <input type="image" src="download.jpeg" alt="submit"/>
+    </form>
+    <script>
+        console.log("hello")
+        const name = document.getElementsByName("myname")
+        console.log(name)
+        console.log(document.getElementsById("firstName"))
+    </script>
+</body>
+</html>

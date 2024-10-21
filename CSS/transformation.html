@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .block{
+        height: 200px;
+        width:100px;
+        border:1px solid black;
+        transition: 3s;
+    }
+    #div1:hover{
+        /* transform:translateX(10px) */
+        /* transform: rotateX(90deg); */
+        /* transform: scale(-2); */
+        /* transform: skewX(45deg); */
+        
+    }
+    #div2:hover{
+        /* transform: translateY(20px); */
+        /* transform: rotateY(-30deg); */
+        /* transform: scaleY(-2); */
+        Transform: skewY(45deg);
+
+    }
+    #div3:hover{
+      /* transform: translate(10px,20px); */
+      /* transform: scaleX(0.2);  */
+      Transform: skew(45deg);
+    }
+    #div4:hover{
+        transform: matrix(1.5,0.7,0,1.5,100,100);
+    }
+</style>
+</head>
+<body>
+    <div class="block" id="div1">
+div1
+    </div>
+    <div class="block" id="div2">
+        div1
+            </div>
+            <div class="block" id="div3">
+                div1
+                    </div>
+                    <div class="block" id="div4">
+                        div1
+                            </div>
+                    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    const tech = ["js","node","react"]
+    const ol =$("<ol>");
+    ol.prop("type","A");
+    const li=$("<li>")
+    li.html("jquery")
+    ol.append(li);
+    $("body").append(ol);
+  const liItems =  tech.map((tec,index)=>{
+        const li=$("<li>")
+         return   li.html(tec);
+            
+    })
+    ol.append(liItems)
+</script>
+</body>
+</html>

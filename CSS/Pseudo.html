@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p:first-child{
+            color:pink
+        }
+
+        p i:first-child{
+            color:blue
+        }
+
+        p:nth-child(2){
+            color:purple
+        } */
+        *:not(p):not(p *) {
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>i am first <i>first i</i>  <i>fsec i</i></p>
+        <p>i am second para</p>
+        <b>i am bold tag</b>
+    </div>
+    <div>
+        <p>i am first para <i>first i</i>  <i>fsec i</i></p>
+        <div> i am div  inside 2nd div</div>
+        <p>i am second para<i>first i</i>  <i>fsec i</i></p>
+    </div>
+    
+</body>
+</html>

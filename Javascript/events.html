@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div>p{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>a</p>
+        <p>a</p>
+        <section><p>a</p></section>
+        <p>a</p>
+    </div>
+    <div>
+        <label for="course">Select Courses for Training:</label>
+        <input  name= "course" type="checkbox"  onchange="collectData()" id="cs1" value="web basics">
+        <label for="cs1">Web Basics</label>
+        <input  name= "course" type="checkbox" onchange="collectData()" id="cs2" value="java">
+        <label for="cs2">Java</label>
+        <input  name= "course" type="checkbox" onchange="collectData()" id="cs3" value="sql">
+        <label for="cs3">SQL</label>
+        <input  name= "course" type="checkbox" onchange="collectData()" id="cs4" value="git">
+        <label for="cs4">GIT</label>
+        <input  name="course" type="checkbox" onchange="collectData()" id="cs5" value="c++">
+        <label for="cs5">C++</label>
+    </div>
+    <script>
+        console.log("ko")
+const checkboxes = document.getElementsByName("course")       
+//or checkboxes.forEach((ele)=>ele.addEventListener(onchange,collectData()))
+function collectData(){
+    // console.log(checkboxes)
+   
+    // checkboxes.forEach(ele=>console.log(ele.checked))
+    let courses =[]
+    for(const node of checkboxes){
+    
+    if(node.checked){
+        courses.push(node.value);
+        console.log(node.value);
+    }
+    
+}
+console.log("course",courses);
+}
+
+const arr= [20,40,70,89,90]
+
+function largest(arr){
+let largestValue = 0;
+let seclargest = 0;
+
+for(const value of arr){
+ if(value > largestValue){
+    seclargest = largestValue;
+    largestValue = value
+       }
+       else if( value < largestValue && value > seclargest){
+         seclargest = value
+       }
+}
+return seclargest;
+}
+
+let arr2 = ["a","a","b","d"]
+
+function unique(arr){
+    let obj ={}
+let count = 0
+    for (const val of arr){
+        if(val in obj){
+            obj[val] +=1;
+        }
+        else{
+            obj[val] = 1;
+        }
+    }
+    return obj;
+}
+const uniqueA = unique(arr2); 
+console.log(uniqueA);
+
+const val = largest(arr);
+console.log("val",val)
+//matching parathesis
+
+function validator(str){
+    const stack =[]
+    const matchingParanthesis ={
+    '(' : ')',
+    '{'  : '}',
+    '[':']'
+
+};
+for(const char of str){
+    if(matchingParanthesis[char]){
+stack.push(char);
+    }
+    else if(char === ')' || char === '}' || char === ']'){
+        const lastOpening = stack.pop()
+        if(matchingParanthesis[lastOpening] !== char){
+            return false
+    }
+    
+}
+}
+
+return stack.length === 0;
+
+}
+console.log("v",validator("9+(2-0){}"))
+    </script>
+    
+</body>
+</html>

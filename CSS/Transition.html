@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .block{
+            height: 100px;
+            width: 100px;
+          background-color: pink;
+          position: relative;
+          left:0;
+        }
+.div1:hover{
+    height: 200px;
+    width:200px;
+    background-color: blueviolet;
+    left:20px;
+
+}
+.div1{
+    /* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]; */
+    transition: width 3s cubic-bezier(0.1, 0.7, 1.0, 0.1), height 3s cubic-bezier(0.1, 0.7, 1.0, 0.1);
+
+    /* transition-duration: 3s; */
+    /* transition-delay:5s; */
+    /* transition-property: width,height; by default all numeric values */
+    /* transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); by deault ease */
+}
+    </style>
+</head>
+<body>
+    <div class="div1 block">
+        india
+    </div>
+</body>
+</html>

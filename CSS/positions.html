@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+    <style>
+        body{
+          
+            border: 5px solid pink;
+        }
+
+        .block{
+            position:relative;
+            left:30px;
+            height:200px;
+            width:200px;
+            padding: 15px;
+           border: 1px solid black;
+         
+
+           /* mandatory parameter */
+           /* border-image: url("../Media/Tulip-Garden-Srinagar-The-Most-Beautiful-Tulip-Garden-in-Asia.avif") 30; */ 
+        
+        }
+        .block2{
+            position: absolute; 
+            /* position of parent should be relative to work*/
+            left:100px;
+            /* height:200px;
+            width:200px; */
+            border: 1px solid green; 
+        }
+        .block3{
+            display: inline-block;
+            height:200px;
+            width:200px;
+            border: 1px solid black;
+            padding: 15px;
+            position: absolute;
+        }
+        .b1{
+            position: absolute;
+            border: 1px solid red;
+            left:10px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="block" id="block1">
+        <p> i aM A PARA</p>
+        <b> I am inline</b>
+        <b> I am inline</b>
+        <b> I am inline</b>
+       <b class="bInline"> I am inline</b>
+       <b class="bInline"> I am inline</b>
+      
+    </div> -->
+   
+        <div class="block2" >
+            <!-- <i class="b1"> I am inline</i> -->
+            <!-- <b class="bInlineBlock"> I am inline</b> -->
+             absolute bloack 2
+             <div class="block3">
+                i am absoloute block 3 child of block2
+            </div>
+     
+    </div>
+    
+    <!-- <div class="block3" >
+        <p> i aM A PARA</p>
+        <b> I am inline</b>
+        <b> I am inline</b>
+        <b> I am inline</b>
+    </div>
+     -->
+  
+</body>
+</html>

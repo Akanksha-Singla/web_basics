@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .errorBlock{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="Success.html"  onsubmit="return validateAll()" novalidate>
+        
+        <!-- <div>
+            <label for="company">Comapny Name</label>
+            <input id="company" value="NEOSOFT" disabled>
+        </div> -->
+        <br>
+        <div>
+            <label for="firstname">Enter FirstName:</label>
+            <input id="firstname" required pattern="[A-Za-z]*">
+        </div>
+        <div class="errorBlock">
+            <b id="error1"></b>
+        </div>
+        
+        <br>
+        <div>
+            <label for="lastname">Enter LastName:</label>
+            <input type="text" id="lastname" placeholder="Enter Last Name" pattern="[A-Za-z] {2,10}">
+        </div>
+        <div class="errorBlock">
+            <b id="error2"></b>
+        </div>
+        
+        <br>
+        <div>
+            <label for="age">Enter Your Age:</label>
+            <input type="number" id="age" min="1" max="80" placeholder="Enter Age please...!" required>
+        </div>
+        <div class="errorBlock">
+            <b id="error3"></b>
+        </div>
+        
+        <br>
+        <div>
+            <label for="email">Enter Your Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="errorBlock">
+            <b id="error4"></b>
+        </div>
+        <br>
+        <div>
+            <label for="password">Enter Your password:</label>
+            <input type="text" id="password" required >
+        </div>
+        <div class="errorBlock">
+            <b id="error5"></b>
+        </div>
+        <br>
+        <!-- <div>
+            <label for="course">Select Courses for Training:</label>
+            <input type="checkbox" id="cs1" value="web basics">
+            <label for="cs1">Web Basics</label>
+            <input type="checkbox" id="cs2" value="java">
+            <label for="cs2">Java</label>
+            <input type="checkbox" id="cs3" value="sql">
+            <label for="cs3">SQL</label>
+            <input type="checkbox" id="cs4" value="git">
+            <label for="cs4">GIT</label>
+            <input type="checkbox" id="cs5" value="c++">
+            <label for="cs5">C++</label>
+        </div>
+        <br> -->
+        <!-- <div>
+            <label for="gender">Select Gender:</label>
+            <input type="radio" id="g1" name="gender" value="male">
+            <label for="g1">Male</label>
+            <input type="radio" id="g2" name="gender" value="female">
+            <label for="g2">Female</label>
+
+        </div>
+        <br> -->
+        <!-- <div>
+            <label for="department">Choose Department:</label>
+            <select>
+                <option>Select</option>
+                <option value="dotnet">Dotnet</option>
+                <option value="java">Java</option>
+                <option value="cpp">C++</option>
+                <option value="js">Javascript</option>
+                <option value="react">React</option>
+                <option value="angular">Angular</option>
+            </select>
+        </div>
+        <br> -->
+        <!-- <div>
+            <label for="comments">Add Extra Comments</label>
+            <textarea name="" id="comments" cols="30" rows="10"></textarea>
+        </div> -->
+        <!-- <div>
+            <input type="color">
+            <input type="date">
+            <input type="datetime-local">
+            <input type="hidden">
+            <input type="file">
+            <input type="week">
+            <input type="range">
+            <input type="number">
+        </div> -->
+        
+        <br>
+        <div>
+            <!-- <input type="image" src="Media/Ganpati-photo-with-quotes.webp" alt="ganesha" width="100px" height="100px"> -->
+            <!-- <input type="submit"> -->
+            <!-- <input type="reset"> -->
+        </div>
+        <br>
+        <div>
+            <button type="submit">SUBMIT</button>
+        </div>
+    </form>
+    <script src="./js/FormValidation.js"></script>
+</body>
+</html>

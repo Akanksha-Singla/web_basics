@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinatores</title>
+    <style>
+        section div{
+            /* direct and indiresct child */
+        color:red;
+        }
+
+        section>div{
+            /* direct child */
+            background: pink;
+
+        }
+    .combinator h1{
+        color:yellow
+
+    }
+
+    #article1+div{
+        /* immediate sibling agar div hai tbi apply hoga*/
+    }
+    #article1+*{
+        /* immediate sibling kuch bhi ho apply hoga*/
+    }
+
+    #article1~div{
+        /* all sibling div after article1 */
+    }
+
+    #article1~*{
+        /* all siblings after */
+    }
+
+    /* combinatores */
+    nav li a{
+
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <article> child 1</article>
+        </div>
+
+        <div>
+            <p> child 2</p>
+        </div>
+        <article class="comninator" id="arcticle1">
+            <h1>arcticle1</h1>
+            <article>
+                <p class="comninator">
+                    <h1>heading 1</h1>
+                </p>
+
+            </article>
+            <b><div> child 3</div></b>
+        </article>
+        <article id="arcticle2">arcticle2<b>child 4</b></article>
+        <article><b>child 5</b></article>
+    </section>
+    
+    
+</body>
+</html>

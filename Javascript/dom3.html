@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const technologies = ["java", "react", "angular"];
+      const tech = ["python", "native"];
+      document.body.style.background = "grey";
+      const ulNode = document.createElement("ul");
+      ulNode.setAttribute("id", "technologies");
+      ulNode.type = "square";
+
+      technologies.forEach((tech, index) => {
+        const liNode = document.createElement("li");
+        liNode.textContent = tech;
+        liNode.setAttribute("id", "i" + index);
+        ulNode.appendChild(liNode);
+      });
+
+      document.body.prepend(ulNode);
+
+      const listNode = tech.map((tech, index) => {
+        const liNodes = document.createElement("li");
+        liNodes.textContent = tech;
+        liNodes.setAttribute("id", "n" + index);
+        return liNodes;
+      });
+      ulNode.append(...listNode);
+
+      let newLi = document.createElement("li");
+      newLi.textContent = "CPP";
+      document.getElementById("n0").before(newLi);
+      console.log(ulNode.children);
+    </script>
+  </body>
+</html>

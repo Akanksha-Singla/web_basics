@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonder Land</title>
+    <style>
+        body{
+            margin: 5px;
+            padding: 20px;
+        }
+        .container{
+            display: grid;
+            grid-template-rows: 30px 45px 3fr 45px;
+            height: 100vh;
+        }
+
+        .box{
+            border: 1px solid black;
+            
+      }
+
+      .contentBox{
+        box-shadow: 10px 10px 40px;
+         background-color:#92cbdf;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10px;
+        text-align: justify;
+        height: 250px;
+        overflow:hidden;
+      }
+         main{
+            display:grid;
+            grid-template-columns: 3fr 1fr;
+            height: 100%;
+         }
+         nav{
+            display: flex;
+            background-color:#071e26;     
+         }
+
+         nav ul li{
+            display: inline-block;
+            text-decoration: none;
+       }
+       nav a{
+            text-decoration: none;
+            margin:5px;
+            color:white
+        }
+        article{
+            display:grid;
+            /* grid-template-rows: 1fr 1fr; */
+            }
+     .section1{
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+               
+            }
+        aside{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+             margin:20px;
+            text-align: justify;
+        }
+        footer{
+            text-align: center;
+        }
+        header{
+            text-align: center;
+        }
+        .bottomSection{
+            position: relative;
+            top:10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Welcome to heaven on earth</header>
+        <nav> <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul></nav>
+        <div>
+            <main>
+              <article>
+             <section class="section1">
+               
+                <div class="contentBox"> 
+                    <h1>Srinagar</h1>
+                    <p>Dal Lake: Famous for its houseboats and shikara rides, Dal Lake is a must-visit. The floating gardens and vibrant markets add to its charm.
+                        Mughal Gardens: Nishat Bagh, Shalimar Bagh, and Chashme Shahi are exquisite gardens built during the Mughal era, showcasing beautiful landscaping and architecture.</p>
+                </div>
+                <div class="contentBox">
+                    <h1>Gulmarg</h1>
+                    <p>Skiing and Snowboarding: Known as the “Meadow of Flowers,” Gulmarg is a top destination for skiing and snowboarding during the winter months.
+                        Gulmarg Gondola: One of the highest cable cars in the world, offering panoramic views of the surrounding mountains and valleys.</p>
+                </div>
+                <div class="contentBox">
+                    <h1> Pahalgam</h1>
+                    <p>Betaab Valley: Named after the Bollywood movie “Betaab,” this valley is known for its picturesque beauty and lush greenery.
+                        Aru Valley: A serene spot for camping, trekking, and horse riding, offering stunning views of the mountains and valleys.</p>
+                </div>
+                <div class="contentBox">
+                    <h1>Leh-Ladakh</h1>
+                    <p>Pangong Lake: A high-altitude lake known for its changing colors and crystal-clear waters, popularized by the movie "3 Idiots."
+                        Thiksey Monastery: A beautiful Buddhist monastery offering spiritual solace and a glimpse into the local culture.</p>
+                </div>
+                <div class="contentBox">
+                    <h1> Sonamarg</h1>
+                    <p>Thajiwas Glacier: A major attraction for trekking, sledding, and camping, offering splendid views of the snow-covered landscape.
+                    Zoji La Pass: A high mountain pass that connects Kashmir with Ladakh, offering breathtaking views and thrilling drives.</p>
+                </div>
+             </section>
+             
+             <section class="bottomSection">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Sr4rIMb83mA?si=bZCh38Y_3N7DPny4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div> 
+                <h1>The Beauty of Jammu and Kashmir</h1>
+                <p>Jammu and Kashmir, often called "Paradise on Earth," captivates with its breathtaking landscapes and serene beauty. From the shimmering waters of Dal Lake in Srinagar, surrounded by Mughal gardens, to the snow-clad peaks of Gulmarg and the lush valleys of Pahalgam, the region offers an array of natural wonders. Leh-Ladakh's stark, majestic landscapes and Sonamarg's pristine glaciers further enhance its allure. The diverse beauty of Jammu and Kashmir, with its picturesque scenery and tranquil ambiance, makes it a truly enchanting destination.</p>
+            </div>   
+            
+            </section>
+              </article>
+              <aside>
+                <img  width="200" height="200" src="../Media/Tulip-Garden-Srinagar-The-Most-Beautiful-Tulip-Garden-in-Asia.avif"/>
+                <h1>Tulip Garden in Srinagar</h1>    
+                <p>The Indira Gandhi Memorial Tulip Garden in Srinagar, Jammu and Kashmir, is the largest tulip garden in Asia. Nestled in the foothills of the Zabarwan Range and overlooking the iconic Dal Lake, this garden spans 30 hectares and features over 60 varieties of tulips. The blooming season, from late March to early April, transforms the garden into a vibrant tapestry of colors. The annual Tulip Festival, held during this period, showcases local culture, crafts, and cuisine, making it a significant attraction for tourists and nature enthusiasts. The garden's stunning beauty and serene ambiance offer a memorable experience for all visitors.</p>
+             </aside>
+
+            </main>
+        </div>
+       <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+       </footer>
+
+    </div>
+   
+</body>
+</html>
